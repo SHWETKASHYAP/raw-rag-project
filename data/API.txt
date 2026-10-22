@@ -1,0 +1,19 @@
+API
+
+API stands for Application Programming Interface.
+An API establishes a connection between programs so they can transfer data.
+
+A program that has an API implies that some part of it's data is exposed for the client to use. The client could be the frontend of the same or external program.
+
+To get this data, a structured request is sent to the API and if the request meets the desired requirements , a response containing data is sent back to where the request was made.
+
+E.g.
+ 	Imagine visiting a new restaurant. You're there to order food, and since you haven't been there before, you don't exactly know what type of food they serve.
+
+The server then approaches you with a menu so you can pick what you'd like to eat. After making your choice, the server then goes to the kitchen and gets your food.
+
+In this case, the server is the API who is connecting you to the kitchen. The API's documentation is the menu. The request is made when you pick what you'd like to eat, and the response is the food being served
+
+REST
+
+REST stands for REpresentational State Transfer.

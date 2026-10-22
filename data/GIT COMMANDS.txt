@@ -1,0 +1,45 @@
+                        GIT COMMANDS :
+
+git init :-
+Creates .git/ folder
+Initializes repo
+git status :-
+Checking State
+Shows :- .untracked, staged and modified files
+git add file.js :-
+stages changes eg. a file.js
+git add . :-
+stages all changes , . -> all
+git commit -m message :-
+                            commits all changes made with a message
+
+1. git remote add origin <url> :-
+				connects local repo to GitHub(remote means somewhere else) repo
+
+2. git remote -v :-
+		    list all the remotes you have configured, along with their URLs
+
+3. git branch -M main :-
+			renames current branch to main
+
+4. git push -u origin main :-
+			      pushes code to main branch , -u sets upstream tracking
+
+
+Note :- After the first setup, you don’t need to run git remote add origin <url> again unless you’re changing the remote.
+	From then on, it’s just add → commit → push.
+	
+		e.g :- git add .
+		       git commit -m "Update feature X"
+		       git push
+
+Note :- If remote code have some changes which local code dosent on pushing the code it will give error , so to fix this
+		(i) pull the remote code :- git pull origin main --rebase
+		(ii) now push the code :- git push
+
+
+git checkout -b frontend-setup-clean:-
+	
+		:- checkout : This tells Git you want to switch to a different branch (or commit).
+		:- -b : This flag means “create a new branch.” Instead of just switching to an existing branch, Git will make a new one for you.
+		:- frontend-setup-clean : name of new branch (can be of any choice)
