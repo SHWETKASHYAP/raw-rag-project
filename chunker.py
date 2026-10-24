@@ -1,4 +1,5 @@
-def chunk_text(text, max_words=150, overlap_words=30):
+
+def chunk_text(text, max_words=100, overlap_words=20):
     """Split text into chunks of roughly max_words, with overlap"""
     
     paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
@@ -33,7 +34,7 @@ def chunk_docs(docs):
     """Turn a list of documents into a list of chunks, keeping metadata"""
     all_chunks = []
     for doc in docs:
-        pieces = chunk_text(doc["text"], 50, 5)
+        pieces = chunk_text(doc["text"])
         for i, piece in enumerate(pieces):
             all_chunks.append({
                 "text": piece,
