@@ -1,8 +1,9 @@
+import re
 
 def chunk_text(text, max_words=100, overlap_words=20):
     """Split text into chunks of roughly max_words, with overlap"""
     
-    paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+    paragraphs = [p.strip() for p in re.split(r"\n+", text) if p.strip()]
 
     chunks = []
     current_chunk = []   #-- holds words in the chunk being built
