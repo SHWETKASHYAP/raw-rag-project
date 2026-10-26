@@ -26,8 +26,8 @@ def build_index():
     except Exception:
         pass  #-- If it doesn't exist, ignore the error
 
-    docs = load_documents()
-    chunks = chunk_documents(docs, max_words=150, overlap_words=30)
+    docs = load_docs()
+    chunks = chunk_docs(docs, max_words=150, overlap_words=30)
     texts = [c["text"] for c in chunks]
 
 
